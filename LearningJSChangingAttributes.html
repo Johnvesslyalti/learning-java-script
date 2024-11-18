@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Attributes</title>
+</head>
+<body>
+   <h1>Hello World!</h1>
+   <button onclick="myName()" type="button">Click It</button>
+   <script>
+    function myName(){
+        var h1Element = document.getElementsByTagName("h1")[0];
+
+        h1Element.innerHTML = "My name is John Vessly Alti";
+
+        h1Element.style.color = "red";
+
+        h1Element.style.textAlign = "center";
+    }
+   </script>
+</body>
+</html>
