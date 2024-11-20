@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+</head>
+<body>
+    <h1>Lists Using Java Script</h1>
+    <ul id="list" class="menu">
+
+    </ul>
+    <script>
+        var items = ["Home","Courses","About","Help"]
+        var listItems = '';
+
+        items.map(
+            (item,index) => {
+                listItems += '<li>'+item+'</li>'
+            }
+        )
+        document.getElementById("list").innerHTML = listItems;
+    </script>
+</body>
+</html>
