@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Template Example</title>
+</head>
+<body>
+    <script>
+        class MyNumbers{
+            name;
+            city;
+            qualification;
+            
+                constructor(name, city, qualification){
+                    this.name = name;
+                    this.city = city;
+                    this.qualification = qualification;
+                }
+            basicData(){
+                document.write("Name: " + this.name +"<br>")
+                document.write("City: " + this.city + "<br>")
+                document.write("Qualification: " + this.qualification + "<br>")
+            }
+        }
+        var data = new MyNumbers("john","Vizianagaram","degree")
+        document.write(data.basicData())
+        
+    </script>
+</body>
+</html>
