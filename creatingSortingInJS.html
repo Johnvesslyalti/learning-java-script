@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+        var valuesOfArray = [0,1,2,3,4,5,6,7,8,9]
+
+        var afterFilter = valuesOfArray.filter((n) => n%2 == 0)
+
+        document.write("Before filter Function: " + valuesOfArray+"<br>")
+
+        document.write("After filter function: " + afterFilter+"<br>")
+
+        valuesOfArray.push(10)
+        document.write("Push Function: "+valuesOfArray+"<br>")
+
+        valuesOfArray.pop()
+        document.write("Pop Function: "+valuesOfArray+"<br>")
+        
+        valuesOfArray.shift()
+        document.write("Shift Function: " + valuesOfArray + "<br>")
+        
+        document.write("To String: " + valuesOfArray.toString() + "<br>")
+
+        valuesOfArray.unshift(11,12,13,14,15)
+        document.write("Unshift values: " + valuesOfArray + "<br>")
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Template</title>
+</head>
+<body>
+    <script>
+        class StudentsData{
+            name;
+            id;
+            age;
+            constructor(name,id,age){
+                this.name = name;
+                this.id = id;
+                this.age = age;
+            }
+            getDetails(){
+                document.write("Name:: " + this.name + "<br>")
+                document.write("ID:: " + this.id + "<br")
+                document.write("Age:: " + this.age + "<br>")
+            }
+        }
+        var s1 = new StudentsData("John",1,21);
+        var s2 = new StudentsData("Vessly",2,22);
+        var s3 = new StudentsData("Alti",3,23);
+        document.write(s1.getDetails())
+
+
+    </script>
+</body>
+</html>
