@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning 'Let' Keyword </title>
+</head>
+<body>
+    <script>
+        //here i am learning how 'let' keyword works
+        //1. Block scope
+        var x = 10;
+        {
+            let x = 1;
+            document.write(x);
+            document.write("<br>");
+        }
+        //but here x = 10 only
+        document.write(x);
+        document.write("<br>");
+        //2. In javascript let key words values cannot be redeclared
+        {
+            let x = 10;
+           /*
+            let x = 34; this is not possible here to redeclare value you
+            have to use var keyword */
+        }
+        // 3. Here i am reassigning the value
+        {
+        let x = 100;
+        add = x + 10;
+        document.write(add);
+        }
+    </script>
+</body>
+</html>
